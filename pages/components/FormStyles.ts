@@ -1,10 +1,6 @@
 import styled from 'styled-components'
 
-type Props = {
-  bg: string;
-}
-
-export const FormStyles = styled.div<Props>`
+export const FormStyles = styled.div`
   width: 39.563rem;
   padding: 1.25rem 8rem;
   border-radius: 5px;

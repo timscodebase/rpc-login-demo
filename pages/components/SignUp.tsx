@@ -44,7 +44,7 @@ const SignUp = ({isSignUp, setIsSignUp}: Props) => {
         </div>
         <button type="submit"><span className='button-p'>Sign In</span></button>
 
-        <button className='create-account' onClick={handleClick}>Don't have an account? Create one now!</button>
+        <button className='create-account' onClick={handleClick}>Don&apos;t have an account? Create one now!</button>
       </form>
     </FormStyles>
   )

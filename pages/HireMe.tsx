@@ -23,7 +23,7 @@ const HireMePage: React.FC = () => {
       <Container>
         <Link href="/">Go back to the demo</Link>
         <h1>Please Hire Me!</h1>
-        <a href="https://timsmith.tech" rel="noopener noreferrer">Tim Smith's website!</a>
+        <a href="https://timsmith.tech" rel="noopener noreferrer">Check out my website!</a>
 
       </Container>
     </>

@@ -8,6 +8,12 @@ import SignInBg from '../public/signin-bg.jpg'
 import SignUp from './components/SignUp'
 import SignIn from './components/SignIn'
 
+type Props = {
+  bg: {
+    src: string
+  };
+}
+
 const Container = styled.div<Props>`
   min-width: 100vw;
   min-height: 100vh;
@@ -20,10 +26,6 @@ const Container = styled.div<Props>`
     background: none;
   }
 `
-
-type Props = {
-  bg: string;
-}
 
 const App: React.FC = () => {
   const [isSignUp, setIsSignUp] = useState(false)
