@@ -37,7 +37,7 @@ const SignIn: React.FC = ({isSignUp, setIsSignUp}: Props) => {
           <label htmlFor="email">Email</label><br />
           <input {...register('email')} />
         </div>
-        <button type="submit"><p className='button-p'>Sign In</p></button>
+        <button type="submit"><span className='button-p'>Sign In</span></button>
 
         <button className='create-account' onClick={handleClick}>Already have an account? Sign in.</button>
       </form>

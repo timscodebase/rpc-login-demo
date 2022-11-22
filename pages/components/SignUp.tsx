@@ -42,7 +42,7 @@ const SignUp: React.FC = ({isSignUp, setIsSignUp}: Props) => {
           <input {...register('password', { required: true })} />
           <a href="" className="forgot-password">Forgot your password?</a>
         </div>
-        <button type="submit"><p className='button-p'>Sign In</p></button>
+        <button type="submit"><span className='button-p'>Sign In</span></button>
 
         <button className='create-account' onClick={handleClick}>Don't have an account? Create one now!</button>
       </form>
