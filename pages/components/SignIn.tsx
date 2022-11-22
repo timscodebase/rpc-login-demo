@@ -7,7 +7,12 @@ type FormData = {
   email: string
 }
 
-const SignIn: React.FC = () => {
+type Props = {
+		isSignUp: boolean;
+		setIsSignUp: (isSignUp: boolean) => void;
+	}
+
+const SignIn: React.FC = ({isSignUp, setIsSignUp}: Props) => {
   const {
     register,
     handleSubmit,
@@ -18,6 +23,9 @@ const SignIn: React.FC = () => {
   const onSubmit: SubmitHandler<FormData> = data => {
     console.log(data);
     router.push('/HireMe')
+  }
+  function handleClick() {
+    setIsSignUp(!isSignUp)
   }
 
   return (
@@ -31,7 +39,7 @@ const SignIn: React.FC = () => {
         </div>
         <button type="submit"><p className='button-p'>Sign In</p></button>
 
-        <button className='create-account'>Already have an account? Sign in.</button>
+        <button className='create-account' onClick={handleClick}>Already have an account? Sign in.</button>
       </form>
     </FormStyles>
   )
