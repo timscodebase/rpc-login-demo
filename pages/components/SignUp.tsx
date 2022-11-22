@@ -1,7 +1,7 @@
 import { FormStyles } from '../../styles/FormStyles'
 import { useRouter } from 'next/router'
 import { useForm, SubmitHandler } from 'react-hook-form'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 type FormData = {
   email: string
@@ -11,10 +11,6 @@ type FormData = {
 type Props = {
   isSignUp: boolean;
   setIsSignUp: (isSignUp: boolean) => void;
-}
-
-const handleButton = () => {
-
 }
 
 const SignUp = ({isSignUp, setIsSignUp}: Props) => {
