@@ -11,7 +11,7 @@ npm install
 npm run build
 ```
 
-This demo alows to do the following:
+This demo allows to do the following:
 
 - Login with a username - redirects to HireMe page
 - Signup with a username and password - redirects to HireMe page
