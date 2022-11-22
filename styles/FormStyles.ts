@@ -83,13 +83,16 @@ export const FormStyles = styled.div`
     min-width: fit-content;
     width: 11.975rem;
     height: 3rem;
+    color: #fff;
+    background-color: rgb(4, 149, 95);
     border-radius: 5px;
     border: none;
   }
 
-  p.button-p {
-    padding: 0;
-    margin: 0;
+  button:disabled,
+  button[disabled]{
+    background-color: rgba(0, 0, 0, 0.03) !important;
+    color: rgba(0, 0, 0, 0.25) !important;
   }
 
   .create-account {

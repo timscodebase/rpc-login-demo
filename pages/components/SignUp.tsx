@@ -1,6 +1,7 @@
 import { FormStyles } from '../../styles/FormStyles'
 import { useRouter } from 'next/router'
 import { useForm, SubmitHandler } from 'react-hook-form'
+import { useEffect, useState } from 'react'
 
 type FormData = {
   email: string
@@ -12,7 +13,12 @@ type Props = {
   setIsSignUp: (isSignUp: boolean) => void;
 }
 
+const handleButton = () => {
+
+}
+
 const SignUp = ({isSignUp, setIsSignUp}: Props) => {
+  const [formDone, setFormDone] = useState(false)
   const {
     register,
     handleSubmit,
@@ -21,7 +27,6 @@ const SignUp = ({isSignUp, setIsSignUp}: Props) => {
 
   const router = useRouter()
   const onSubmit: SubmitHandler<FormData> = data => {
-    console.log(data);
     router.push('/HireMe')
   }
   function handleClick() {
@@ -35,14 +40,15 @@ const SignUp = ({isSignUp, setIsSignUp}: Props) => {
       <form onSubmit={handleSubmit(onSubmit)}>
         <div>
           <label htmlFor="email">Email</label><br />
-          <input {...register('email', { required: true })} />
+          <input type="text" placeholder="Email Address" {...register(
+            'email', {required: true, pattern: /^\S+@\S+$/i})} />
         </div>
         <div>
           <label htmlFor="password">Password</label><br />
-          <input {...register('password', { required: true })} />
+          <input className='password' onKeyUp={() => setFormDone(!formDone)} placeholder='Password' {...register('password', { required: true })} />
           <a href="" className="forgot-password">Forgot your password?</a>
         </div>
-        <button type="submit"><span className='button-p'>Sign In</span></button>
+        <button type="submit" disabled={!formDone}><span>Sign In</span></button>
 
         <button className='create-account' onClick={handleClick}>Don&apos;t have an account? Create one now!</button>
       </form>
