@@ -46,6 +46,7 @@ export const FormStyles = styled.div`
     margin: 0.5rem 0px 0.5rem 0px;
     font-size: 1.125rem;
     padding: 0.6rem 1rem;
+    outline: none;
   }
 
   input::placeholder {

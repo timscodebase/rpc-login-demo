@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Head from 'next/head'
 import styled from 'styled-components'
 import TopBar from './components/TopBar'
