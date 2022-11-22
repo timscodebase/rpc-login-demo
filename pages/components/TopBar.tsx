@@ -36,10 +36,16 @@ const TopBarStyles = styled.div`
 
     &:hover {
       background-color: var(--peach);
+    }
   }
 `
 
-export default function TopBar({isSignUp, setIsSignUp}) {
+type Props = {
+  isSignUp: boolean;
+  setIsSignUp: (isSignUp: boolean) => void;
+}
+
+export default function TopBar({isSignUp, setIsSignUp}: Props) {
   function handleClick() {
     setIsSignUp(!isSignUp)
   }

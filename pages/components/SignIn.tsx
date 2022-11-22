@@ -1,6 +1,7 @@
 
 import { FormStyles } from './FormStyles'
-import { useForm } from 'react-hook-form'
+import { useRouter } from 'next/router'
+import { useForm, SubmitHandler } from 'react-hook-form'
 
 type FormData = {
   email: string
@@ -13,7 +14,11 @@ const SignIn: React.FC = () => {
     formState: { errors }
   } = useForm<FormData>()
 
-  const onSubmit: SubmitHandler<FormData> = data => console.log(data)
+  const router = useRouter()
+  const onSubmit: SubmitHandler<FormData> = data => {
+    console.log(data);
+    router.push('/HireMe')
+  }
 
   return (
     <FormStyles>

@@ -37,3 +37,5 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 960px) {}

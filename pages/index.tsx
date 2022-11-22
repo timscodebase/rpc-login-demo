@@ -8,14 +8,22 @@ import SignInBg from '../public/signin-bg.jpg'
 import SignUp from './components/SignUp'
 import SignIn from './components/SignIn'
 
-const Container = styled.div`
+const Container = styled.div<Props>`
   min-width: 100vw;
   min-height: 100vh;
   background: url(${props => props.bg.src});
   background-size: cover;
   display: grid;
   place-items: center;
+
+  @media screen and (max-width: 960px) {
+    background: none;
+  }
 `
+
+type Props = {
+  bg: string;
+}
 
 const App: React.FC = () => {
   const [isSignUp, setIsSignUp] = useState(false)

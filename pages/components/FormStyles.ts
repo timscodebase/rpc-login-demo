@@ -1,13 +1,24 @@
 import styled from 'styled-components'
 
-export const FormStyles = styled.div`
+type Props = {
+  bg: string;
+}
+
+export const FormStyles = styled.div<Props>`
   width: 39.563rem;
   padding: 1.25rem 8rem;
   border-radius: 5px;
-  -webkit-box-shadow: 30px 30px 60px 0 rgb(74 74 74 / 25%);
   box-shadow: 30px 30px 60px 0 rgb(74 74 74 / 25%);
   border: 1px solid hsla(300,1%,81%,.37);
   background-color: #fff;
+
+  @media screen and (max-width: 960px) {
+    width: 100%;
+    box-shadow: none;
+    border: none;
+  }
+
+  /* I am purposly leaving the footer around on mobile.  It looks better */
   
   h2 {
     color: var(--blue);
