@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styled from "styled-components"
 
 const Container = styled.div`
@@ -20,8 +21,9 @@ const HireMePage: React.FC = () => {
     <>
       <Head><title>Please hire me!!</title></Head>
       <Container>
+        <Link href="/">Go back to the demo</Link>
         <h1>Please Hire Me!</h1>
-        <a href="https://timsmith.tech" rel="noopener noreferrer">Tim Smith's Awesome website!</a>
+        <a href="https://timsmith.tech" rel="noopener noreferrer">Tim Smith's website!</a>
 
       </Container>
     </>

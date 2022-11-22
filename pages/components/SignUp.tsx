@@ -12,7 +12,7 @@ type Props = {
   setIsSignUp: (isSignUp: boolean) => void;
 }
 
-const SignUp: React.FC = ({isSignUp, setIsSignUp}: Props) => {
+const SignUp = ({isSignUp, setIsSignUp}: Props) => {
   const {
     register,
     handleSubmit,
