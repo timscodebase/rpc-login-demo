@@ -29,7 +29,7 @@ export const FormStyles = styled.div`
     text-align: center;
   }
 
-  lable {
+  label {
     font-size: 1.125rem;
     margin: 0px;
     display: flex;
@@ -54,7 +54,11 @@ export const FormStyles = styled.div`
   }
 
   input:focus-within {
-    border: 1px solid rgb(4, 149, 95);
+    border: 1px solid rgb(4, 149, 95) !important;
+  }
+
+  input:hover {
+    border: 1px solid var(--peach);
   }
 
   .button-p,
