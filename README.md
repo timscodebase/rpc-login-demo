@@ -16,3 +16,4 @@ This demo allows to do the following:
 - Login with a username - redirects to HireMe page
 - Signup with a username and password - redirects to HireMe page
 - Swap between Login and Signup forms
+- The app is responsive and works on mobile devices
