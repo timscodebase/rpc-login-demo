@@ -1,0 +1,39 @@
+:root {
+  --blue: rgb(32, 58, 96);
+  --peach: rgb(243, 142, 125);
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque Light';
+  src: url('/brandon-grotesque-light.otf');
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque Bold';
+  src: url('/brandon-grotesque-black.otf');
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Brandon Grotesque Light', serif;
+}
+
+body {
+  max-width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
