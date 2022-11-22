@@ -1,4 +1,4 @@
-import { FormStyles } from './FormStyles'
+import { FormStyles } from '../../styles/FormStyles'
 import { useRouter } from 'next/router'
 import { useForm, SubmitHandler } from 'react-hook-form'
 
